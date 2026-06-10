@@ -6,7 +6,7 @@ level = "info"
 
 [[projects]]
 name = "c-nexus"
-admin_from = "YOUR_WECHAT_ACCOUNT@im.wechat"
+admin_from = "YOUR_WECHAT_ACCOUNT_1"
 
 [projects.agent]
 type = "claudecode"
@@ -16,7 +16,7 @@ work_dir = "/root/projects/c-nexus"
 mode = "default"
 
 [projects.agent.options.env]
-ANTHROPIC_AUTH_TOKEN = "YOUR_API_TOKEN_HERE"
+ANTHROPIC_AUTH_TOKEN = "YOUR_ANTHROPIC_TOKEN"
 ANTHROPIC_BASE_URL = "https://api.deepseek.com/anthropic"
 ANTHROPIC_DEFAULT_HAIKU_MODEL = "deepseek-v4-flash"
 ANTHROPIC_DEFAULT_OPUS_MODEL = "deepseek-v4-pro"
@@ -29,16 +29,16 @@ ANTHROPIC_MODEL = "deepseek-v4-pro"
 type = "weixin"
 
 [projects.platforms.options]
-token = "YOUR_WECHAT_BOT_TOKEN_HERE"
+token = "YOUR_BOT_TOKEN_1"
 base_url = "https://ilinkai.weixin.qq.com"
-account_id = "YOUR_BOT_ACCOUNT_ID@im.bot"
-allow_from = "YOUR_WECHAT_ACCOUNT@im.wechat"
+account_id = "e9920527c824@im.bot"
+allow_from = "YOUR_WECHAT_ACCOUNT_1"
 
 [[projects.platforms]]
 type = "weixin"
 
 [projects.platforms.options]
-token = "YOUR_WECHAT_BOT_TOKEN_HERE"
+token = "YOUR_BOT_TOKEN_2"
 base_url = "https://ilinkai.weixin.qq.com"
-account_id = "YOUR_BOT_ACCOUNT_ID@im.bot"
-allow_from = "YOUR_WECHAT_ACCOUNT@im.wechat"
+account_id = "8adcca8dc931@im.bot"
+allow_from = "YOUR_WECHAT_ACCOUNT_2"
