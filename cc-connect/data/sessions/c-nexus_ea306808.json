@@ -1,0 +1,149 @@
+{
+  "sessions": {
+    "s1": {
+      "id": "s1",
+      "name": "default",
+      "agent_session_id": "",
+      "past_agent_session_ids": [
+        "15ca3f72-fe9f-438f-b159-60c914c1d959"
+      ],
+      "history": null,
+      "created_at": "2026-06-10T04:30:13.139887671Z",
+      "updated_at": "2026-06-10T08:24:37.976804764Z"
+    },
+    "s2": {
+      "id": "s2",
+      "name": "",
+      "agent_session_id": "8f0bba44-a300-4bae-a275-686066827477",
+      "agent_type": "claudecode",
+      "history": [
+        {
+          "role": "user",
+          "content": "欧耶，你还记得我喜欢啥吗，现在是新回话了吧",
+          "timestamp": "2026-06-10T08:27:39.38774356Z"
+        },
+        {
+          "role": "assistant",
+          "content": "哈哈当然记得！新会话归新会话，你那些事儿我可没忘：\n\n- **龙珠老粉**，全系列完整追完，不是跟风党\n- 最爱的龙珠主题曲是 **超OP1「Chōzetsu☆Dynamic!」**，不是国内那帮跟风党无脑吹的「渐渐被你吸引」\n- **影山浩宣**才是龙珠音乐的真神，「WE GOTTA POWER」和「運命の日～魂VS魂～」地位极高\n- 觉得国内龙珠圈跟风狗连一部完整龙珠都没看完就在那刷「坂井泉水 yyds」，烦得很\n- **命运2玩家**\n- 说话喜欢直接、接地气，别装逼别加戏\n\n怎么样，没掉链子吧？😎",
+          "timestamp": "2026-06-10T08:27:52.280978649Z"
+        },
+        {
+          "role": "user",
+          "content": "嘿嘿嘿，不错",
+          "timestamp": "2026-06-10T08:28:39.056812918Z"
+        },
+        {
+          "role": "assistant",
+          "content": "那必须的，哥们儿的事儿咱能忘吗 😏\n\n有啥想聊的或者要干的活随时说！",
+          "timestamp": "2026-06-10T08:28:41.721746309Z"
+        },
+        {
+          "role": "user",
+          "content": "以后每次新建会话时候你都需要保存一下我的风格兴趣爱好以及性格行为啥的，长期保存并更新到你的记忆里，哦不哦 k，老铁",
+          "timestamp": "2026-06-10T08:33:56.229426641Z"
+        },
+        {
+          "role": "assistant",
+          "content": "安排上了！以后每次新会话我都会主动翻翻你的记忆库，有啥新变化也第一时间更新进去，不用你提醒。\n\n妥妥的，老铁 🤝",
+          "timestamp": "2026-06-10T08:34:08.284170044Z"
+        },
+        {
+          "role": "user",
+          "content": "能把这些更新到 GitHub 仓库里吗",
+          "timestamp": "2026-06-10T08:34:47.962132898Z"
+        },
+        {
+          "role": "assistant",
+          "content": "这个目录目前还不是 git 仓库，没法直接推到 GitHub。你看要怎么搞：\n\n1. **在这儿初始化一个 git 仓库**，然后关联你的 GitHub remote 推上去\n2. **你告诉我目标仓库地址**，我直接 clone 下来把记忆文件放进去再推\n3. **你已经有专门的记忆备份仓库**，告诉我地址就行\n\n你想怎么来？",
+          "timestamp": "2026-06-10T08:34:53.396205468Z"
+        },
+        {
+          "role": "user",
+          "content": "直接帮我初始化一个仓库，然后把所有关于你的文件全都克隆到仓库里，包括什么 cc connect 还有什么 Claudecode，DeepSeek 啥的。你滴，明白？",
+          "timestamp": "2026-06-10T08:45:01.171963655Z"
+        },
+        {
+          "role": "assistant",
+          "content": "好了，文件都翻出来了。但在动手之前，有个**要命的事**必须跟你说。\n\n---\n\n## ⚠️ 敏感信息警告\n\n你的配置文件里藏着这些**不能公开**的东西：\n\n| 文件 | 敏感内容 |\n|------|----------|\n| `/root/.claude/settings.json` | `ANTHROPIC_AUTH_TOKEN`（API 密钥） |\n| `/root/.cc-connect/config.toml` | API 密钥 + 两个微信 Bot Token + 账号 ID |\n\n如果推到**公开**仓库，别人就能拿你的 token 随便调用 API，花你的钱。\n\n---\n\n## 我建议这样搞\n\n整理以下文件进仓库，**敏感信息一律过滤掉**：\n\n**要保留的：**\n- Claude Code 设置（去掉 token）\n- 三份记忆文件（`user-profile.md`、`dragon-ball-music-rankings.md`、`MEMORY.md`）\n- cc-connect 配置结构（token 替换成占位符）\n- cc-connect session 数据\n\n**另外**，`gh` CLI 没装，得用原生 git 推，你需要给我一个 GitHub 仓库地址。\n\n---\n\n你看这样行不行？敏感信息我自动帮你脱敏处理，还是你想先建个私有仓库？",
+          "timestamp": "2026-06-10T08:46:10.675326963Z"
+        },
+        {
+          "role": "user",
+          "content": "啥玩意，又说英文了呢",
+          "timestamp": "2026-06-10T08:47:13.170079663Z"
+        },
+        {
+          "role": "assistant",
+          "content": "草，我的锅！重来。\n\n---\n\n## ⚠️ 你配置文件里有敏感信息\n\n你的 `settings.json` 和 `config.toml` 里直接写着 **API 密钥** 和 **微信 Bot Token**，推到公开仓库就相当于把家门钥匙扔大街上了。\n\n我的建议：敏感部分我帮你替换成占位符（比如 `YOUR_TOKEN_HERE`），其他的原样保留。\n\n---\n\n## 要收集的文件清单\n\n- Claude Code 设置 + 三份记忆文件\n- cc-connect 配置（脱敏后）+ session 数据\n- `.claude.json` 项目配置\n\n---\n\n**另外**，`gh` 命令行没装，你得给我一个 GitHub 仓库地址（比如 `https://github.com/你的用户名/仓库名`），我直接用原生 git 推上去。\n\n搞不搞？",
+          "timestamp": "2026-06-10T08:47:21.38217064Z"
+        },
+        {
+          "role": "user",
+          "content": "操，必须搞，那你帮我想一个霸气雷霆的仓库名",
+          "timestamp": "2026-06-10T08:50:02.289006004Z"
+        },
+        {
+          "role": "assistant",
+          "content": "哈哈哈必须的！结合你是龙珠铁粉 + DeepSeek/Claude 双 AI 加持，给你整几个猛的：\n\n---\n\n## 候选仓库名\n\n1. **`自在极意AI`** — 龙珠最高境界 + AI，又装逼又有内涵\n2. **`神龙核心`** — 集齐七颗龙珠召唤神龙，你这把 Claude、DeepSeek、cc-connect 全凑一块了\n3. **`破坏神领域`** — 比鲁斯大人的地盘，霸气侧漏\n4. **`精神时光屋`** — 外面一天里面一年，AI 在里面疯狂修炼\n5. **`赛亚科技`** — 赛亚人 + 科技，简单粗暴\n\n---\n\n我个人最推荐 **`自在极意AI`**，原因很简单——自在极意功是龙珠里最屌的境界，配你这套 AI 全家桶够格，而且名字不长好记。\n\n你觉得哪个行？或者我直接按 `自在极意AI` 开搞？",
+          "timestamp": "2026-06-10T08:50:18.579163616Z"
+        },
+        {
+          "role": "user",
+          "content": "哎卧槽，别那么中二行不，我是喜欢龙珠，别这么搞我啊，正常点行不。而且来个英文仓库名啊，那中文能行吗",
+          "timestamp": "2026-06-10T08:51:26.398404493Z"
+        },
+        {
+          "role": "assistant",
+          "content": "哈哈行行行，不搞中二了。\n\n这仓库说白了就是你的 AI 全家桶配置文件中心——Claude Code、DeepSeek、cc-connect 的记忆和设置一把梭。\n\n正经英文名：\n\n1. **`ai-hub`** — 简单直接，你的 AI 配置中枢\n2. **`nexus-config`** — 沿用你项目名 c-nexus，干净利落\n3. **`claude-sync`** — 核心就是 Claude 记忆同步\n4. **`ai-dotfiles`** — 类比 Linux 的 dotfiles，懂的人一看就懂\n5. **`mind-vault`** — 你的 AI 记忆保险库，不中二但有点逼格\n\n你看哪个顺眼？",
+          "timestamp": "2026-06-10T08:51:36.764389079Z"
+        }
+      ],
+      "created_at": "2026-06-10T08:27:11.047273634Z",
+      "updated_at": "2026-06-10T08:50:20.316170719Z"
+    },
+    "s3": {
+      "id": "s3",
+      "name": "default",
+      "agent_session_id": "c2641650-82a9-43a2-8f9a-46875729d557",
+      "agent_type": "claudecode",
+      "history": [
+        {
+          "role": "user",
+          "content": "明天天气如何",
+          "timestamp": "2026-06-10T08:28:21.223808095Z"
+        },
+        {
+          "role": "assistant",
+          "content": "你的位置在哪个城市？告诉我才能帮你查天气。",
+          "timestamp": "2026-06-10T08:28:29.89141542Z"
+        }
+      ],
+      "created_at": "2026-06-10T08:28:21.221438422Z",
+      "updated_at": "2026-06-10T08:28:31.660640682Z"
+    }
+  },
+  "active_session": {
+    "weixin:dm:o9cq809aXQvQhP-szI0NOURUADgA@im.wechat": "s2",
+    "weixin:dm:o9cq80zRgVhjxXOvX4CV8DBW3swo@im.wechat": "s3"
+  },
+  "user_sessions": {
+    "weixin:dm:o9cq809aXQvQhP-szI0NOURUADgA@im.wechat": [
+      "s1",
+      "s2"
+    ],
+    "weixin:dm:o9cq80zRgVhjxXOvX4CV8DBW3swo@im.wechat": [
+      "s3"
+    ]
+  },
+  "counter": 3,
+  "user_meta": {
+    "weixin:dm:o9cq809aXQvQhP-szI0NOURUADgA@im.wechat": {
+      "user_name": "o9cq809aXQvQhP-szI0NOURUADgA@im.…"
+    },
+    "weixin:dm:o9cq80zRgVhjxXOvX4CV8DBW3swo@im.wechat": {
+      "user_name": "o9cq80zRgVhjxXOvX4CV8DBW3swo@im.…"
+    }
+  },
+  "past_id_tracking": true,
+  "version": 1
+}

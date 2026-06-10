@@ -1,0 +1,10 @@
+# 别把没脱敏的原文件意外提交
+*-raw.*
+*-original.*
+
+# Claude 运行时文件
+.claude/
+
+# 系统文件
+.DS_Store
+Thumbs.db
