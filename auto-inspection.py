@@ -19,7 +19,12 @@ SMTP_PASS = "CcZvi1xqXmfYlZ0b"
 
 # ====== 收件人列表 ======
 RECIPIENTS = [
+    "lifangfang@lnitv.com",
     "renzhicai@lnitv.com",
+    "wujian@lnitv.com",
+    "xukaixuan@lnitv.com",
+    "gezhijia@lnitv.com",
+    "liuweiwang@lnitv.com",
 ]
 
 
