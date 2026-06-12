@@ -1,4 +1,4 @@
 - [用户画像](user-profile.md) — 身份、性格、语言和交流偏好
 - [龙珠音乐排名](dragon-ball-music-rankings.md) — 用户对龙珠主题曲的个人排名和观点
-- [巡检表自动化](inspection-automation.md) — 监播巡检表自动改日期发邮件系统
 - [职业规划](career-goals.md) — 运维实习生，Zabbix监控，不靠AI排错的学习理念
+- [巡检表自动化](inspection-automation.md) — 监播巡检Excel自动改日期、改频道数、定时发邮件的全流程规则
