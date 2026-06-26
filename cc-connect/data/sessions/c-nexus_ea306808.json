@@ -958,10 +958,30 @@
           "role": "assistant",
           "content": "已群发六人 ✅",
           "timestamp": "2026-06-24T01:06:45.253245219Z"
+        },
+        {
+          "role": "user",
+          "content": "26 号白班",
+          "timestamp": "2026-06-26T13:00:06.74187243Z"
+        },
+        {
+          "role": "assistant",
+          "content": "定时已取消。\n\n---\n\n**📋 6月26日白班巡检表预览**\n\n| 项目 | 内容 |\n|------|------|\n| 文件 | `processed_任志财20260626白班监播监控巡检表2026.xlsx` |\n| 日期 | 2026年6月26日（白班） |\n| IPTV频道 | 141 → 142 ✅ |\n| 发件人 | renzhicai@lnitv.com |\n| 正文 | 请查收附件。 |\n\n---\n\n发谁？",
+          "timestamp": "2026-06-26T13:00:27.738747214Z"
+        },
+        {
+          "role": "user",
+          "content": "群发",
+          "timestamp": "2026-06-26T13:00:42.062853477Z"
+        },
+        {
+          "role": "assistant",
+          "content": "已群发六人 ✅",
+          "timestamp": "2026-06-26T13:01:18.91854689Z"
         }
       ],
       "created_at": "2026-06-11T22:36:08.971417193Z",
-      "updated_at": "2026-06-24T01:06:17.560204399Z"
+      "updated_at": "2026-06-26T13:00:29.49002108Z"
     }
   },
   "active_session": {
